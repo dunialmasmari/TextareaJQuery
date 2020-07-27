@@ -32,7 +32,7 @@
    $(document).ready(function(){
     $("#description")
     .keydown(function(event){
-    if ( $(this).val().length >= 200) {
+    if (event.keyCode != 8 && event.keyCode != 46 &&  $(this).val().length >= 200) {
         event.preventDefault();
     }
 })
